@@ -46,7 +46,7 @@ if st.button('Add'):
     data_df.to_csv('data.csv', index=False)
 
     # update points for contributor
-    points = 1
+    points = 0
     if not data_df[(data_df['Latitude'] == lat) & (data_df['Longitude'] == lon)].empty:
         points += 1
 
